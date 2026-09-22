@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Атлант Сервис Обмен</title>
+<meta name="description" content="Обмен RUB ⇄ UAH и перестановка наличных по всему миру. Быстро, понятно и с удобной связью через мессенджеры.">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta name="theme-color" content="#0c2340">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Атлант Сервис Обмен">
+<meta property="og:title" content="Атлант Сервис Обмен">
+<meta property="og:description" content="Обмен RUB ⇄ UAH и перестановка наличных по всему миру. Быстро, понятно и с удобной связью через мессенджеры.">
+<meta property="og:image" content="img/og-cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ SVG sprite ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="g-tg" viewBox="0 0 24 24"><path d="M21.6 4.3 2.9 11.5c-1 .4-1 1.8.1 2.1l4.6 1.4 1.8 5.5c.3.9 1.4 1.1 2 .4l2.5-2.6 4.6 3.4c.7.5 1.7.1 1.9-.8l3.2-15c.2-1-.8-1.8-1.7-1.4zM9.6 14.6l8.2-5.1-6.6 6.1-.3 3.1-1.3-4.1z"/></symbol>
+    <symbol id="g-wa" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.9-1.3A10 10 0 1 0 12 2zm5.3 14c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.5-.6-2.7-1.2-4.4-3.9-4.6-4.1-.1-.2-1-1.4-1-2.6 0-1.2.6-1.8.9-2.1.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.3.5-.3.3c-.1.1-.3.3-.1.6.1.3.6 1.1 1.4 1.8 1 .9 1.8 1.1 2 1.3.3.1.4.1.6-.1l.8-1c.2-.2.4-.2.6-.1l2 .9c.2.1.4.2.4.3.1.2.1.7-.1 1.2z"/></symbol>
+    <symbol id="g-sg" viewBox="0 0 24 24"><path d="M12 2.2c-5.5 0-9.9 4-9.9 9 0 2.2.9 4.2 2.3 5.8l-1 4 4.3-1.1c1.3.6 2.8.9 4.3.9 5.5 0 9.9-4 9.9-9s-4.4-9.6-9.9-9.6z"/></symbol>
+    <symbol id="g-imo" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2.2c-5.6 0-10 3.8-10 8.5 0 2.7 1.4 5.1 3.7 6.6-.2 1.3-.8 2.8-1.8 4 2-.3 4-1.2 5.3-2.3.9.2 1.8.3 2.8.3 5.6 0 10-3.8 10-8.6s-4.4-8.5-10-8.5zM8.7 9.2a1.3 1.3 0 1 0 0 2.6 1.3 1.3 0 0 0 0-2.6zm6.6 0a1.3 1.3 0 1 0 0 2.6 1.3 1.3 0 0 0 0-2.6zM8.3 13.4c-.4.3-.1.9.2 1.2 1 1 2.2 1.5 3.5 1.5s2.5-.5 3.5-1.5c.3-.3.6-.9.2-1.2-.4-.3-.8.1-1.1.3-.8.6-1.7 1-2.6 1s-1.8-.4-2.6-1c-.3-.2-.7-.6-1.1-.3z"/></symbol>
+    <symbol id="g-bip" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M6.2 2.4h11.6a4.2 4.2 0 0 1 4.2 4.2v8.6a4.2 4.2 0 0 1-4.2 4.2h-5.3L7.7 22.4v-3h-1.5A4.2 4.2 0 0 1 2 15.2V6.6a4.2 4.2 0 0 1 4.2-4.2zm2 7.5a1.35 1.35 0 1 0 0 2.7 1.35 1.35 0 0 0 0-2.7zm3.8 0a1.35 1.35 0 1 0 0 2.7 1.35 1.35 0 0 0 0-2.7zm3.8 0a1.35 1.35 0 1 0 0 2.7 1.35 1.35 0 0 0 0-2.7z"/></symbol>
+  </defs>
+</svg>
+
+<!-- ============ HEADER ============ -->
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a class="brand" href="index.html">
+      <img class="mark" src="img/logo.webp" width="160" height="160" alt="Логотип Атлант Сервис Обмен" decoding="async">
+      <span>
+        <b>Атлант<br>Сервис Обмен</b>
+      </span>
+    </a>
+
+    <nav class="nav">
+      <a class="on" href="index.html">Главная</a>
+      <a href="obmen-rub-uah.html">Обмен RUB ⇄ UAH</a>
+      <a href="perestanovka-nalichnyh.html">Перестановка наличных</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+
+    <a class="btn btn-pri" href="#contacts">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.9 3 2.8 6.3 2.8 10.4c0 2.3 1.3 4.4 3.3 5.7-.1 1-.6 2.3-1.5 3.3 1.6-.2 3.2-.9 4.4-1.8 1 .2 2 .4 3 .4 5.1 0 9.2-3.3 9.2-7.6S17.1 3 12 3z"/></svg>
+      Связаться
+    </a>
+
+    <button class="burger" aria-label="Меню">
+      <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main class="wrap" id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" style="margin-top:22px">
+    <img class="hero-earth" src="img/globe.webp" width="900" height="900" alt="" fetchpriority="high" decoding="async">
+
+    <div class="hero-in">
+      <p class="eyebrow">Надёжные финансовые решения</p>
+      <h1>Обмен RUB ⇄ UAH<br>и перестановка наличных<br>по всему миру</h1>
+      <p>Атлант Сервис Обмен — удобное решение для обмена рублей и гривны, а также организации передачи наличных между городами и странами. Быстро, понятно и с удобной связью через мессенджеры.</p>
+
+      <div class="hero-btns">
+        <a class="btn btn-pri" href="#contacts">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.4 3.1 2.6 10.6c-.8.3-.8 1.5.1 1.7l4.9 1.4 1.8 5.5c.2.8 1.3 1 1.8.3l2.3-2.7 4.6 3.4c.6.5 1.6.2 1.8-.7l3-14.6c.2-.9-.6-1.7-1.5-1.3z"/></svg>
+          Связаться с нами
+        </a>
+        <a class="btn btn-ghost" href="#services">Узнать подробнее <span style="color:#9fb1c5">›</span></a>
+      </div>
+
+      <div class="msgrow">
+        <span class="msg"><i class="i-tg"><svg><use href="#g-tg"/></svg></i>Telegram</span>
+        <span class="msg"><i class="i-wa"><svg><use href="#g-wa"/></svg></i>WhatsApp</span>
+        <span class="msg"><i class="i-sg"><svg><use href="#g-sg"/></svg></i>Signal</span>
+        <span class="msg"><i class="i-imo"><svg><use href="#g-imo"/></svg></i>imo</span>
+        <span class="msg"><i class="i-bip"><svg><use href="#g-bip"/></svg></i>BiP</span>
+      </div>
+    </div>
+
+    <div class="hero-words">Люди<br>Города<br>Возможности<br>Ближе</div>
+
+    <div class="hero-badge">
+      <svg viewBox="0 0 24 24"><path d="M12 3 5 6v5.5c0 4.3 2.9 8.3 7 9.5 4.1-1.2 7-5.2 7-9.5V6l-7-3z"/><path d="m9 12 2 2 4-4"/></svg>
+      <div>Удобно<br>Надёжно<br>Конфиденциально</div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="grid2" id="services">
+    <article class="svc" id="exchange">
+      <div class="pic">
+        <img src="img/exchange.webp" width="520" height="520" loading="lazy" decoding="async" alt="Монета с символом рубля и монета с флагом Украины">
+      </div>
+      <div>
+        <h3>Обмен RUB ⇄ UAH</h3>
+        <p>Обмен российских рублей на украинские гривны и обратно. Вы оставляете заявку, сообщаете сумму и направление обмена, после чего получаете актуальные условия и дальнейшие инструкции.</p>
+        <a class="btn btn-pri" href="obmen-rub-uah.html">Подробнее <span>›</span></a>
+      </div>
+    </article>
+
+    <article class="svc alt" id="cash">
+      <div class="pic">
+        <img src="img/cash.webp" width="520" height="520" loading="lazy" decoding="async" alt="Чемоданы и метки на карте">
+      </div>
+      <div>
+        <h3>Перестановка наличных<br>по всему миру</h3>
+        <p>Передача наличных между странами и городами. Вы сообщаете сумму, место отправления и место получения, а затем получаете информацию по доступности и условиям проведения операции.</p>
+        <a class="btn btn-pri" href="perestanovka-nalichnyh.html">Подробнее <span>›</span></a>
+      </div>
+    </article>
+  </section>
+
+  <!-- ============ WHY ============ -->
+  <section class="feat">
+    <div class="feat-head">
+      <h2 class="h2">Почему выбирают Атлант Сервис</h2>
+      <!-- TODO: подставьте ссылку на канал с отзывами -->
+      <a class="btn btn-ghost" href="#" target="_blank" rel="noopener">
+        <svg class="tg" viewBox="0 0 24 24"><use href="#g-tg"/></svg>
+        Смотреть отзывы в Telegram
+      </a>
+    </div>
+
+    <div class="feat-grid">
+      <div class="feat-i">
+        <svg viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>
+        <h4>Быстрый отклик</h4>
+        <p>Оперативная обратная связь в рабочее время</p>
+      </div>
+      <div class="feat-i">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18z"/></svg>
+        <h4>Международные направления</h4>
+        <p>Работа с разными городами и странами</p>
+      </div>
+      <div class="feat-i">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 20a7.5 7.5 0 0 1 15 0"/></svg>
+        <h4>Индивидуальный подход</h4>
+        <p>Условия уточняются под конкретный запрос</p>
+      </div>
+      <div class="feat-i">
+        <svg viewBox="0 0 24 24"><path d="M12 3 5 6v5.5c0 4.3 2.9 8.3 7 9.5 4.1-1.2 7-5.2 7-9.5V6l-7-3z"/><path d="m9 12 2 2 4-4"/></svg>
+        <h4>Конфиденциальность</h4>
+        <p>Деловая и аккуратная коммуникация</p>
+      </div>
+      <div class="feat-i">
+        <svg viewBox="0 0 24 24"><path d="m12 3.5 2.7 5.5 6 .9-4.3 4.2 1 6-5.4-2.8-5.4 2.8 1-6L3.3 9.9l6-.9z"/></svg>
+        <h4>Много отзывов клиентов</h4>
+        <p>Реальные отзывы опубликованы в Telegram</p>
+      </div>
+      <div class="feat-i">
+        <svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 9.5 9.5 0 0 1-3.2-.5L3 21l1.6-4.6A8.3 8.3 0 0 1 3 11.5 8.4 8.4 0 0 1 12 3a8.4 8.4 0 0 1 9 8.5z"/></svg>
+        <h4>Удобная связь</h4>
+        <p>Telegram, WhatsApp, Signal, imo и BiP</p>
+      </div>
+      <div class="feat-i">
+        <svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>
+        <h4>Понятный процесс</h4>
+        <p>Без лишней сложности, всё объясняется заранее</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contacts">
+    <div class="contact-in">
+      <div>
+        <h2>Связаться удобным способом</h2>
+        <p>Выберите мессенджер и напишите нам напрямую — расскажите о сумме и направлении, и менеджер сообщит актуальные условия.</p>
+
+        <!-- Мессенджеры на номере +38 097 019 20 21 -->
+        <div class="msg-btns">
+          <a class="msg-btn" href="https://t.me/+380970192021" target="_blank" rel="noopener"><i class="i-tg"><svg><use href="#g-tg"/></svg></i>Telegram</a>
+          <a class="msg-btn" href="https://wa.me/380970192021" target="_blank" rel="noopener"><i class="i-wa"><svg><use href="#g-wa"/></svg></i>WhatsApp</a>
+          <a class="msg-btn" href="https://signal.me/#p/+380970192021" target="_blank" rel="noopener"><i class="i-sg"><svg><use href="#g-sg"/></svg></i>Signal</a>
+          <a class="msg-btn" href="tel:+380970192021" target="_blank" rel="noopener"><i class="i-imo"><svg><use href="#g-imo"/></svg></i>imo</a>
+          <a class="msg-btn" href="tel:+380970192021" target="_blank" rel="noopener"><i class="i-bip"><svg><use href="#g-bip"/></svg></i>BiP</a>
+        </div>
+
+        <div class="contact-lines">
+          <a class="contact-line" href="tel:+380970192021">
+            <i><svg viewBox="0 0 24 24"><path d="M6.6 3h3l1.5 4-2 1.4a13 13 0 0 0 6.5 6.5l1.4-2 4 1.5v3a2 2 0 0 1-2.2 2A17.5 17.5 0 0 1 4.6 5.2 2 2 0 0 1 6.6 3z"/></svg></i>
+            <span><b>+38 097 019 20 21</b><em>все мессенджеры на этом номере</em></span>
+          </a>
+          <a class="contact-line" href="mailto:atlantmoneyy@gmail.com">
+            <i><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.6 6.6 8.4 6 8.4-6"/></svg></i>
+            <span><b>atlantmoneyy@gmail.com</b><em>почта для обращений</em></span>
+          </a>
+        </div>
+
+        <p class="contact-note">Все детали и условия уточняются индивидуально при обращении.</p>
+      </div>
+
+      <svg class="contact-phone" viewBox="0 0 200 384" role="img" aria-label="Приложение Атлант Сервис Обмен на экране смартфона">
+        <defs>
+          <linearGradient id="ph-frame" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#3d556e"/><stop offset="6%" stop-color="#b6c7d7"/>
+            <stop offset="17%" stop-color="#7b91a6"/><stop offset="50%" stop-color="#576d85"/>
+            <stop offset="83%" stop-color="#93a7ba"/><stop offset="94%" stop-color="#c2d1de"/>
+            <stop offset="100%" stop-color="#37506a"/>
+          </linearGradient>
+          <linearGradient id="ph-edge" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#ffffff" stop-opacity=".55"/>
+            <stop offset="35%" stop-color="#ffffff" stop-opacity=".06"/>
+            <stop offset="70%" stop-color="#ffffff" stop-opacity=".16"/>
+            <stop offset="100%" stop-color="#ffffff" stop-opacity=".45"/>
+          </linearGradient>
+          <linearGradient id="ph-screen" x1=".15" y1="0" x2=".85" y2="1">
+            <stop offset="0%" stop-color="#143255"/><stop offset="45%" stop-color="#0d2340"/>
+            <stop offset="100%" stop-color="#08192e"/>
+          </linearGradient>
+          <linearGradient id="ph-gloss" x1="0" y1="0" x2=".8" y2="1">
+            <stop offset="0%" stop-color="#ffffff" stop-opacity=".16"/>
+            <stop offset="55%" stop-color="#ffffff" stop-opacity="0"/>
+          </linearGradient>
+          <linearGradient id="ph-btn" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#2a86dd"/><stop offset="100%" stop-color="#1157ad"/>
+          </linearGradient>
+          <radialGradient id="ph-glow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#2f7fd0" stop-opacity=".45"/>
+            <stop offset="100%" stop-color="#2f7fd0" stop-opacity="0"/>
+          </radialGradient>
+          <clipPath id="ph-clip"><rect x="23" y="17" width="154" height="348" rx="29"/></clipPath>
+          <filter id="ph-shadow" x="-45%" y="-25%" width="190%" height="160%">
+            <feDropShadow dx="0" dy="12" stdDeviation="11" flood-color="#020a14" flood-opacity=".55"/>
+          </filter>
+        </defs>
+
+        <g filter="url(#ph-shadow)">
+          <rect x="11.5" y="92" width="3.5" height="11" rx="1.7" fill="#6d8398"/>
+          <rect x="11.5" y="114" width="3.5" height="22" rx="1.7" fill="#6d8398"/>
+          <rect x="11.5" y="142" width="3.5" height="22" rx="1.7" fill="#6d8398"/>
+          <rect x="185" y="126" width="3.5" height="34" rx="1.7" fill="#6d8398"/>
+
+          <rect x="14" y="8" width="172" height="366" rx="37" fill="url(#ph-frame)"/>
+          <rect x="14.6" y="8.6" width="170.8" height="364.8" rx="36.4" fill="none" stroke="url(#ph-edge)" stroke-width="1.2"/>
+          <rect x="19" y="13" width="162" height="356" rx="33" fill="#050b13"/>
+          <rect x="23" y="17" width="154" height="348" rx="29" fill="url(#ph-screen)"/>
+        </g>
+
+        <g clip-path="url(#ph-clip)">
+          <circle cx="100" cy="292" r="86" fill="url(#ph-glow)"/>
+
+          <!-- статус-бар -->
+          <text x="36" y="35" font-family="Inter,Arial" font-size="7" font-weight="600" fill="#dbe8f5">12:30</text>
+          <g fill="#c6d8ea">
+            <rect x="140" y="30" width="2.4" height="4" rx="1"/>
+            <rect x="144" y="28" width="2.4" height="6" rx="1"/>
+            <rect x="148" y="26.5" width="2.4" height="7.5" rx="1"/>
+            <path d="M155 28.5a7 7 0 0 1 8 0l-4 4.6z"/>
+            <rect x="166" y="27" width="9" height="6" rx="2" opacity=".55"/>
+            <rect x="167" y="28" width="6" height="4" rx="1.2"/>
+          </g>
+          <rect x="83" y="24" width="34" height="11" rx="5.5" fill="#04090f"/>
+          <circle cx="110" cy="29.5" r="2.4" fill="#0d1922"/>
+
+          <!-- шапка приложения -->
+          <image href="img/logo.webp" x="33" y="47" width="22" height="22"/>
+          <text x="60" y="56" font-family="Inter,Arial" font-size="7.6" font-weight="700" letter-spacing=".4" fill="#ffffff">АТЛАНТ СЕРВИС</text>
+          <text x="60" y="65.5" font-family="Inter,Arial" font-size="5.8" fill="#8fa8c2">обмен и перестановка</text>
+          <path d="M33 78h134" stroke="#ffffff" stroke-opacity=".09" stroke-width="1"/>
+
+          <!-- услуги -->
+          <g>
+            <rect x="33" y="88" width="134" height="35" rx="11" fill="#ffffff" fill-opacity=".07"/>
+            <rect x="33.5" y="88.5" width="133" height="34" rx="10.5" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+            <circle cx="50" cy="105.5" r="10" fill="#2a86dd" fill-opacity=".18"/>
+            <text x="50" y="109.5" font-family="Inter,Arial" font-size="10" font-weight="700" fill="#7dbdf5" text-anchor="middle">&#8381;</text>
+            <text x="66" y="102.5" font-family="Inter,Arial" font-size="6.8" font-weight="600" fill="#eaf2fa">Обмен RUB &#8644; UAH</text>
+            <text x="66" y="112" font-family="Inter,Arial" font-size="5.6" fill="#8fa8c2">условия по запросу</text>
+            <path d="M155 101.5l3.4 4-3.4 4" fill="none" stroke="#7d97b3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+          <g>
+            <rect x="33" y="129" width="134" height="35" rx="11" fill="#ffffff" fill-opacity=".07"/>
+            <rect x="33.5" y="129.5" width="133" height="34" rx="10.5" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+            <circle cx="50" cy="146.5" r="10" fill="#2a86dd" fill-opacity=".18"/>
+            <g transform="translate(44.5 141)" fill="none" stroke="#7dbdf5" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="1" y="3" width="7" height="7" rx="1.6"/>
+              <path d="M3 3V1.8A1.5 1.5 0 0 1 6 1.8V3"/>
+              <path d="M9.4 4.6a2 2 0 0 1 2 2c0 1.5-2 3.6-2 3.6s-2-2.1-2-3.6a2 2 0 0 1 2-2z" fill="#7dbdf5" stroke="none"/>
+            </g>
+            <text x="66" y="143.5" font-family="Inter,Arial" font-size="6.8" font-weight="600" fill="#eaf2fa">Перестановка наличных</text>
+            <text x="66" y="153" font-family="Inter,Arial" font-size="5.6" fill="#8fa8c2">города и страны</text>
+            <path d="M155 142.5l3.4 4-3.4 4" fill="none" stroke="#7d97b3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+
+          <!-- мессенджеры -->
+          <text x="33" y="184" font-family="Inter,Arial" font-size="5.6" font-weight="600" letter-spacing=".9" fill="#8fa8c2">НАПИСАТЬ В МЕССЕНДЖЕР</text>
+          <g>
+            <circle cx="42" cy="200" r="9.5" fill="#2b9fd9"/>
+            <use href="#g-tg" x="36.5" y="194.5" width="11" height="11" fill="#ffffff"/>
+            <circle cx="71" cy="200" r="9.5" fill="#26b862"/>
+            <use href="#g-wa" x="65.5" y="194.5" width="11" height="11" fill="#ffffff"/>
+            <circle cx="100" cy="200" r="9.5" fill="#3f6fd0"/>
+            <use href="#g-sg" x="94.5" y="194.5" width="11" height="11" fill="#ffffff"/>
+            <circle cx="129" cy="200" r="9.5" fill="#0fc2f2"/>
+            <use href="#g-imo" x="123.5" y="194.5" width="11" height="11" fill="#ffffff"/>
+            <circle cx="158" cy="200" r="9.5" fill="#0e9e9a"/>
+            <use href="#g-bip" x="152.5" y="194.5" width="11" height="11" fill="#ffffff"/>
+          </g>
+
+          <!-- кнопка -->
+          <rect x="33" y="220" width="134" height="27" rx="9" fill="url(#ph-btn)"/>
+          <rect x="33.5" y="220.5" width="133" height="26" rx="8.5" fill="none" stroke="#ffffff" stroke-opacity=".22"/>
+          <text x="100" y="237.5" font-family="Inter,Arial" font-size="7.4" font-weight="600" fill="#ffffff" text-anchor="middle">Связаться с нами</text>
+
+          <!-- глобус -->
+          <image href="img/globe-sm.webp" x="63" y="258" width="74" height="74"/>
+          <text x="100" y="346" font-family="Inter,Arial" font-size="5.8" fill="#7f99b5" text-anchor="middle">+38 097 019 20 21</text>
+
+          <rect x="82" y="356" width="36" height="3" rx="1.5" fill="#ffffff" fill-opacity=".45"/>
+
+          <path d="M23 17h74L47 365H23z" fill="url(#ph-gloss)"/>
+        </g>
+      </svg>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-top">
+      <a class="brand" href="index.html">
+        <img class="mark" src="img/logo.webp" width="160" height="160" alt="" decoding="async">
+        <span>
+          <b>Атлант Сервис Обмен</b>
+          <span>Надёжные решения для вашего комфорта</span>
+        </span>
+      </a>
+
+      <nav class="ftr-nav">
+        <a href="index.html">Главная</a>
+        <a href="obmen-rub-uah.html">Обмен RUB ⇄ UAH</a>
+        <a href="perestanovka-nalichnyh.html">Перестановка наличных</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <div class="soc">
+        <i class="i-tg"><svg><use href="#g-tg"/></svg></i>
+        <i class="i-wa"><svg><use href="#g-wa"/></svg></i>
+        <i class="i-sg"><svg><use href="#g-sg"/></svg></i>
+        <i class="i-imo"><svg><use href="#g-imo"/></svg></i>
+        <i class="i-bip"><svg><use href="#g-bip"/></svg></i>
+      </div>
+    </div>
+
+    <div class="ftr-bot">
+      <p>© 2024 Атлант Сервис Обмен. Все права защищены.</p>
+      <p class="ftr-contacts"><a href="tel:+380970192021">+38 097 019 20 21</a><span>·</span><a href="mailto:atlantmoneyy@gmail.com">atlantmoneyy@gmail.com</a></p>
+      <p>Информация на сайте носит ознакомительный характер.<br>Все детали и условия уточняются индивидуально при обращении.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
