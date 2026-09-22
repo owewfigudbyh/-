@@ -3,6 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const OUT = 'dist';
+const MIRROR = 'build'; // дубль для настроек деплоя, где указана папка build
 
 const FILES = [
   'index.html',
@@ -34,4 +35,7 @@ for (const dir of DIRS) {
   }
 }
 
-console.log(`Готово: ${count} файлов в папке ${OUT}`);
+fs.rmSync(MIRROR, { recursive: true, force: true });
+fs.cpSync(OUT, MIRROR, { recursive: true });
+
+console.log(`Готово: ${count} файлов в папках ${OUT} и ${MIRROR}`);

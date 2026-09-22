@@ -1,4 +1,5 @@
 dist/
+build/
 node_modules/
 atlant-site.zip
 atlant-servis-obmen.html
