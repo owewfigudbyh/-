@@ -130,10 +130,19 @@ TPL = '''<!DOCTYPE html>
 </html>
 '''
 
-MAP_SECTION = '\n  <!-- ============ НАПРАВЛЕНИЯ ============ -->\n  <section class="map-block">\n    <h2 class="h2">Направления</h2>\n    <p class="sub">Киев, Львов, Днепр, Симферополь, Москва, Санкт-Петербург, Берлин, Париж, Стамбул — и другие города по запросу</p>\n    <div class="map-wrap">\n{map}\n    </div>\n  </section>\n'
+MAP_SECTION = """
+  <!-- ============ НАПРАВЛЕНИЯ ============ -->
+  <section class="map-block" id="map">
+    <h2 class="h2">География направлений</h2>
+    <p class="sub">Киев, Москва, Санкт-Петербург, Минск, Варшава, Берлин, Париж, Стамбул и другие города — доступность направления уточняется при обращении</p>
+    <div class="map-wrap">
+      <img src="img/map.svg" width="1400" height="1189" loading="lazy" decoding="async"
+           alt="Карта направлений переводов между городами Украины, России и Европы">
+    </div>
+  </section>
+"""
 
-_map = io.open(os.path.join(BASE, 'img', 'map.svg'), encoding='utf-8').read().strip()
-PAGES[1]['extra'] = MAP_SECTION.replace('{map}', '      ' + _map)
+PAGES[1]['extra'] = MAP_SECTION
 
 for p in PAGES:
     header = HEADER.replace('<a class="on" href="index.html">', '<a href="index.html">')
