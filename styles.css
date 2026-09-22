@@ -158,6 +158,12 @@ section{margin-top:30px}
 .placeholder h2{margin:0 0 10px; font-size:17px; color:var(--navy)}
 .placeholder p{margin:0; font-size:13.5px; line-height:1.75; color:#7f91a6}
 
+/* ---------- карта направлений ---------- */
+.map-block{margin-top:44px}
+.map-wrap{background:linear-gradient(140deg,#f8fbfd 0%,#eaf1f9 100%); border:1px solid var(--line);
+  border-radius:22px; padding:24px; box-shadow:var(--sh-card)}
+.map-wrap svg{display:block; width:100%; height:auto}
+
 /* ---------- footer ---------- */
 .ftr{margin-top:34px; background:#0b1f36; color:#b3c4d6}
 .ftr-top{display:flex; align-items:center; gap:26px; padding:30px 0 26px}
@@ -198,6 +204,7 @@ section{margin-top:30px}
   .contact-phone{display:none}
   .page-head{grid-template-columns:1fr; gap:28px; padding:34px 28px}
   .page-head-pic{max-width:260px}
+  .map-wrap{padding:14px; border-radius:18px}
   .ftr-top{flex-wrap:wrap}
   .ftr-nav{margin:0; order:3; width:100%; flex-wrap:wrap; gap:16px 20px}
 }

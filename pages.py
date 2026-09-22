@@ -25,6 +25,7 @@ PAGES = [
         'h1': 'Обмен RUB ⇄ UAH',
         'lead': 'Обмен российских рублей на украинские гривны и обратно. Вы сообщаете сумму и направление '
                 'обмена, после чего получаете актуальные условия и дальнейшие инструкции.',
+        'extra': '',
         'img': 'exchange.webp',
         'alt': 'Монета с символом рубля и монета с флагом Украины',
         'nav': 'obmen-rub-uah.html',
@@ -36,8 +37,8 @@ PAGES = [
         'h1': 'Перестановка наличных<br>по всему миру',
         'lead': 'Передача наличных между странами и городами. Вы сообщаете сумму, место отправления и место '
                 'получения, а затем получаете информацию по доступности направления и условиям операции.',
-        'img': 'cash.webp',
-        'alt': 'Чемоданы и метки на карте',
+        'img': 'map-compact.svg',
+        'alt': 'Карта направлений переводов',
         'nav': 'perestanovka-nalichnyh.html',
     },
 ]
@@ -119,7 +120,7 @@ TPL = '''<!DOCTYPE html>
     <!-- ===== КОНЕЦ КОНТЕНТА ===== -->
 
   </section>
-
+{extra}
 {contact}
 </main>
 
@@ -129,6 +130,11 @@ TPL = '''<!DOCTYPE html>
 </html>
 '''
 
+MAP_SECTION = '\n  <!-- ============ НАПРАВЛЕНИЯ ============ -->\n  <section class="map-block">\n    <h2 class="h2">Направления</h2>\n    <p class="sub">Киев, Львов, Днепр, Симферополь, Москва, Санкт-Петербург, Берлин, Париж, Стамбул — и другие города по запросу</p>\n    <div class="map-wrap">\n{map}\n    </div>\n  </section>\n'
+
+_map = io.open(os.path.join(BASE, 'img', 'map.svg'), encoding='utf-8').read().strip()
+PAGES[1]['extra'] = MAP_SECTION.replace('{map}', '      ' + _map)
+
 for p in PAGES:
     header = HEADER.replace('<a class="on" href="index.html">', '<a href="index.html">')
     header = header.replace('<a href="%s">' % p['nav'], '<a class="on" href="%s">' % p['nav'])
@@ -136,7 +142,7 @@ for p in PAGES:
                               '<!-- ============ КОНТАКТЫ ============ -->')
     html = TPL.format(title=p['title'], desc=p['desc'], sprite=SPRITE, header=header,
                       crumb=p['h1'].replace('<br>', ' '), h1=p['h1'], lead=p['lead'],
-                      img=p['img'], alt=p['alt'], contact=contact, footer=FOOTER)
+                      img=p['img'], alt=p['alt'], extra=p.get('extra', ''), contact=contact, footer=FOOTER)
     out = os.path.join(BASE, p['file'])
     io.open(out, 'w', encoding='utf-8').write(html)
     print(p['file'], round(os.path.getsize(out) / 1024, 1), 'KB')
@@ -178,7 +184,7 @@ NOT_FOUND = '''<!DOCTYPE html>
       </div>
     </div>
   </section>
-
+{extra}
 {contact}
 </main>
 
@@ -188,6 +194,7 @@ NOT_FOUND = '''<!DOCTYPE html>
 </html>
 '''
 
+NOT_FOUND = NOT_FOUND.replace('{extra}', '')
 nf = NOT_FOUND.replace('{sprite}', SPRITE).replace('{header}', HEADER.replace('<a class="on" href="index.html">', '<a href="index.html">'))
 nf = nf.replace('{contact}', CONTACT).replace('{footer}', FOOTER)
 io.open(os.path.join(BASE, '404.html'), 'w', encoding='utf-8').write(nf)
