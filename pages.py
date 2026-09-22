@@ -37,7 +37,7 @@ PAGES = [
         'h1': 'Перестановка наличных<br>по всему миру',
         'lead': 'Передача наличных между странами и городами. Вы сообщаете сумму, место отправления и место '
                 'получения, а затем получаете информацию по доступности направления и условиям операции.',
-        'img': 'map-compact.svg',
+        'img': 'map-card.svg',
         'alt': 'Карта направлений переводов',
         'nav': 'perestanovka-nalichnyh.html',
     },
@@ -93,7 +93,7 @@ TPL = '''<!DOCTYPE html>
     </div>
 
     <div class="page-head-pic">
-      <img src="img/{img}" width="520" height="520" alt="{alt}" decoding="async">
+      <img src="img/{img}" width="1400" height="1189" alt="{alt}" decoding="async">
     </div>
   </section>
 
@@ -130,19 +130,7 @@ TPL = '''<!DOCTYPE html>
 </html>
 '''
 
-MAP_SECTION = """
-  <!-- ============ НАПРАВЛЕНИЯ ============ -->
-  <section class="map-block" id="map">
-    <h2 class="h2">География направлений</h2>
-    <p class="sub">Киев, Москва, Санкт-Петербург, Минск, Варшава, Берлин, Париж, Стамбул и другие города — доступность направления уточняется при обращении</p>
-    <div class="map-wrap">
-      <img src="img/map.svg" width="1400" height="1189" loading="lazy" decoding="async"
-           alt="Карта направлений переводов между городами Украины, России и Европы">
-    </div>
-  </section>
-"""
-
-PAGES[1]['extra'] = MAP_SECTION
+PAGES[1]['extra'] = ''
 
 for p in PAGES:
     header = HEADER.replace('<a class="on" href="index.html">', '<a href="index.html">')
