@@ -93,7 +93,7 @@ TPL = '''<!DOCTYPE html>
     </div>
 
     <div class="page-head-pic">
-      <img src="img/{img}" width="1400" height="1189" alt="{alt}" decoding="async">
+      <img src="img/{img}" width="1400" height="1032" alt="{alt}" decoding="async">
     </div>
   </section>
 
